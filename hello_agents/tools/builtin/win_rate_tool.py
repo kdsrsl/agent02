@@ -9,10 +9,10 @@ import os
 from typing import Dict, Any
 from datetime import datetime
 
-from hello_agents.tools.base import Tool
-from hello_agents.evaluation.benchmarks.data_generation.dataset import AIDataset
-from hello_agents.evaluation.benchmarks.data_generation.win_rate import WinRateEvaluator
-from hello_agents.core.llm import HelloAgentsLLM
+from tools.base import Tool
+from evaluation.benchmarks.data_generation.dataset import AIDataset
+from evaluation.benchmarks.data_generation.win_rate import WinRateEvaluator
+from core.llm import HelloAgentsLLM
 
 
 class WinRateTool(Tool):

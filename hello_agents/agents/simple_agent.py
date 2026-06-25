@@ -3,13 +3,13 @@
 from typing import Optional, Iterator, TYPE_CHECKING
 import re
 
-from ..core.agent import Agent
-from ..core.llm import HelloAgentsLLM
-from ..core.config import Config
-from ..core.message import Message
+from core.agent import Agent
+from core.llm import HelloAgentsLLM
+from core.config import Config
+from core.message import Message
 
 if TYPE_CHECKING:
-    from ..tools.registry import ToolRegistry
+    from tools.registry import ToolRegistry
 
 class SimpleAgent(Agent):
     """简单的对话Agent，支持可选的工具调用"""
@@ -335,7 +335,7 @@ class SimpleAgent(Agent):
         如果工具是可展开的（expandable=True），会自动展开为多个独立工具
         """
         if not self.tool_registry:
-            from ..tools.registry import ToolRegistry
+            from tools.registry import ToolRegistry
             self.tool_registry = ToolRegistry()
             self.enable_tool_calling = True
 

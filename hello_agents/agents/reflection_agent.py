@@ -1,10 +1,10 @@
 """Reflection Agent实现 - 自我反思与迭代优化的智能体"""
 
 from typing import Optional, List, Dict, Any
-from ..core.agent import Agent
-from ..core.llm import HelloAgentsLLM
-from ..core.config import Config
-from ..core.message import Message
+from core.agent import Agent
+from core.llm import HelloAgentsLLM
+from core.config import Config
+from core.message import Message
 
 # 默认提示词模板
 DEFAULT_PROMPTS = {
@@ -141,7 +141,7 @@ class ReflectionAgent(Agent):
             print(f"\n--- 第 {i+1}/{self.max_iterations} 轮迭代 ---")
 
             # a. 反思
-            print("\n-> 正在进行反思...")
+            print("\n-> 正在进行反思.")
             last_result = self.memory.get_last_execution()
             reflect_prompt = self.prompts["reflect"].format(
                 task=input_text,
@@ -156,7 +156,7 @@ class ReflectionAgent(Agent):
                 break
 
             # c. 优化
-            print("\n-> 正在进行优化...")
+            print("\n-> 正在进行优化.")
             refine_prompt = self.prompts["refine"].format(
                 task=input_text,
                 last_attempt=last_result,

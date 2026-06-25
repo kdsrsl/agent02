@@ -3,7 +3,7 @@
 import asyncio
 import concurrent.futures
 from typing import Dict, Any, List
-from .registry import ToolRegistry
+from tools.registry import ToolRegistry
 
 
 class AsyncToolExecutor:

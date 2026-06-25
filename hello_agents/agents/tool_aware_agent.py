@@ -8,9 +8,9 @@ import logging
 from collections.abc import Iterator
 from typing import Any, Callable, Optional
 
-from .simple_agent import SimpleAgent
-from ..core.message import Message
-from ..tools import ToolRegistry
+from agents.simple_agent import SimpleAgent
+from core.message import Message
+from tools import ToolRegistry
 
 logger = logging.getLogger(__name__)
 

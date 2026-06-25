@@ -14,8 +14,8 @@ import logging
 import math
 import numpy as np
 
-from ..base import BaseMemory, MemoryItem, MemoryConfig
-from ..embedding import get_text_embedder, get_dimension
+from memory.base import BaseMemory, MemoryItem, MemoryConfig
+from memory.embedding import get_text_embedder, get_dimension
 
 
 # 配置日志

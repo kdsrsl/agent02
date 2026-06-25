@@ -5,11 +5,11 @@ from datetime import datetime
 import uuid
 import logging
 
-from .base import MemoryItem, MemoryConfig
-from .types.working import WorkingMemory
-from .types.episodic import EpisodicMemory
-from .types.semantic import SemanticMemory
-from .types.perceptual import PerceptualMemory
+from memory.base import MemoryItem, MemoryConfig
+from memory.types.working import WorkingMemory
+from memory.types.episodic import EpisodicMemory
+from memory.types.semantic import SemanticMemory
+from memory.types.perceptual import PerceptualMemory
 # 存储和检索功能已被各记忆类型内部实现替代
 
 logger = logging.getLogger(__name__)

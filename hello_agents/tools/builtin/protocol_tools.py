@@ -8,7 +8,7 @@
 """
 
 from typing import Dict, Any, List, Optional
-from ..base import Tool, ToolParameter
+from tools.base import Tool, ToolParameter
 import os
 
 

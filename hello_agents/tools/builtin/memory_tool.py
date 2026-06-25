@@ -7,8 +7,8 @@
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 
-from ..base import Tool, ToolParameter, tool_action
-from ...memory import MemoryManager, MemoryConfig
+from tools.base import Tool, ToolParameter, tool_action
+from memory import MemoryManager, MemoryConfig
 
 class MemoryTool(Tool):
     """记忆工具

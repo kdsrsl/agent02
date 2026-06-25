@@ -5,14 +5,26 @@ from __future__ import annotations
 import json
 from typing import Iterator, Optional, Union, TYPE_CHECKING, Any, Dict
 
-from ..core.agent import Agent
-from ..core.config import Config
-from ..core.llm import HelloAgentsLLM
-from ..core.message import Message
+# from ..core.agent import Agent
+# from ..core.config import Config
+# from ..core.llm import HelloAgentsLLM
+from core.message import Message
+
+# if TYPE_CHECKING:
+#     from ..tools.registry import ToolRegistry
+
+
+# from typing import Optional, TYPE_CHECKING
+# from ..core.agent import Agent
+# from ..core.llm import HelloAgentsLLM
+# from ..core.config import Config
+from core.agent import Agent
+from core.llm import HelloAgentsLLM
+from core.config import Config
 
 if TYPE_CHECKING:
-    from ..tools.registry import ToolRegistry
-
+    # from ..tools.registry import ToolRegistry
+    from tools.registry import ToolRegistry
 
 def _map_parameter_type(param_type: str) -> str:
     """将工具参数类型映射为JSON Schema允许的类型"""

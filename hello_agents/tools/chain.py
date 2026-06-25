@@ -1,7 +1,7 @@
 """工具链管理器 - HelloAgents工具链式调用支持"""
 
 from typing import List, Dict, Any, Optional
-from .registry import ToolRegistry
+from tools.registry import ToolRegistry
 
 
 class ToolChain:

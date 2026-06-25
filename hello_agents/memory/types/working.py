@@ -11,7 +11,7 @@ from typing import List, Dict, Any
 from datetime import datetime, timedelta
 import heapq
 
-from ..base import BaseMemory, MemoryItem, MemoryConfig
+from memory.base import BaseMemory, MemoryItem, MemoryConfig
 
 class WorkingMemory(BaseMemory):
     """工作记忆实现

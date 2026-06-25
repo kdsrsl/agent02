@@ -7,7 +7,7 @@ from typing import Dict, Any, List, Optional
 import json
 from pathlib import Path
 
-from ..base import Tool, ToolParameter
+from tools.base import Tool, ToolParameter
 
 
 class RLTrainingTool(Tool):

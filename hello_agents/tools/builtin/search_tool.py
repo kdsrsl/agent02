@@ -8,7 +8,7 @@ from typing import Any, Dict, Iterable, List
 
 import requests
 
-from ..base import Tool, ToolParameter
+from tools.base import Tool, ToolParameter
 
 try:  # 可选依赖，缺失时降级能力
     from markdownify import markdownify

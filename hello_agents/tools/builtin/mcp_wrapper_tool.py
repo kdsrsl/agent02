@@ -6,7 +6,7 @@ MCP工具包装器 - 将单个MCP工具包装成HelloAgents Tool
 """
 
 from typing import Dict, Any, Optional, List
-from ..base import Tool, ToolParameter
+from tools.base import Tool, ToolParameter
 
 
 class MCPWrappedTool(Tool):

@@ -27,7 +27,7 @@ from pathlib import Path
 import shlex
 import platform
 
-from ..base import Tool, ToolParameter
+from tools.base import Tool, ToolParameter
 
 
 class TerminalTool(Tool):

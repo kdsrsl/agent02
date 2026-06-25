@@ -4,8 +4,8 @@ import hashlib
 import sqlite3
 import time
 import json
-from ..embedding import get_text_embedder, get_dimension
-from ..storage.qdrant_store import QdrantVectorStore
+from memory.embedding import get_text_embedder, get_dimension
+from memory.storage.qdrant_store import QdrantVectorStore
 
 
 def _get_markitdown_instance():

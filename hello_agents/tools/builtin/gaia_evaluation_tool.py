@@ -8,10 +8,10 @@ from typing import Dict, Any, List, Optional, Union
 from pathlib import Path
 import json
 from datetime import datetime
-from ..base import Tool, ToolParameter
-from hello_agents.evaluation.benchmarks.gaia.dataset import GAIADataset
-from hello_agents.evaluation.benchmarks.gaia.evaluator import GAIAEvaluator
-from hello_agents.evaluation.benchmarks.gaia.metrics import GAIAMetrics
+from tools.base import Tool, ToolParameter
+from evaluation.benchmarks.gaia.dataset import GAIADataset
+from evaluation.benchmarks.gaia.evaluator import GAIAEvaluator
+from evaluation.benchmarks.gaia.metrics import GAIAMetrics
 
 
 class GAIAEvaluationTool(Tool):

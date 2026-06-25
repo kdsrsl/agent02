@@ -2,9 +2,9 @@
 
 from abc import ABC, abstractmethod
 from typing import Optional
-from .message import Message
-from .llm import HelloAgentsLLM
-from .config import Config
+from core.message import Message
+from core.llm import HelloAgentsLLM
+from core.config import Config
 
 class Agent(ABC):
     """Agent基类"""

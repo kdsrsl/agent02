@@ -6,7 +6,7 @@
 from typing import Optional, Callable, Dict, Any
 from pathlib import Path
 
-from .utils import TrainingConfig, check_trl_installation, get_installation_guide
+from rl.utils import TrainingConfig, check_trl_installation, get_installation_guide
 
 try:
     from transformers import TrainerCallback

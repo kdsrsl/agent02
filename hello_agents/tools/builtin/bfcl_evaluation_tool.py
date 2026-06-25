@@ -36,7 +36,7 @@ import shutil
 import json
 from pathlib import Path
 from typing import Dict, Any, Optional, List
-from ..base import Tool, ToolParameter
+from tools.base import Tool, ToolParameter
 
 
 class BFCLEvaluationTool(Tool):
