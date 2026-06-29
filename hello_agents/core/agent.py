@@ -40,7 +40,7 @@ class Agent(ABC):
         return self._history.copy()
     
     def __str__(self) -> str:
-        return f"Agent(name={self.name}, provider={self.llm.provider})"
+        return f"Agent(name={self.name}, provider={self.llm.provider},{system_prompt},config={config})"
     
     def __repr__(self) -> str:
         return self.__str__()

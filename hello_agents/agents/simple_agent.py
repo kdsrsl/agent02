@@ -283,7 +283,7 @@ class SimpleAgent(Agent):
         while current_iteration < max_tool_iterations:
             # 调用LLM
             response = self.llm.invoke(messages, **kwargs)
-
+            print("simple agent llm invoke ",messages,response)
             # 检查是否有工具调用
             tool_calls = self._parse_tool_calls(response)
 

@@ -125,4 +125,5 @@ def calculate(expression: str) -> str:
         计算结果字符串
     """
     tool = CalculatorTool()
+    print("calculate, expression :",expression)
     return tool.run({"input": expression})
