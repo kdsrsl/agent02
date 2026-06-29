@@ -37,7 +37,7 @@ class RLTrainingTool(Tool):
 
         # 检查TRL是否可用
         try:
-            from hello_agents.rl import TRL_AVAILABLE
+            from rl import TRL_AVAILABLE
             self.trl_available = TRL_AVAILABLE
         except ImportError:
             self.trl_available = False
@@ -223,7 +223,7 @@ class RLTrainingTool(Tool):
 
     def _handle_load_dataset(self, parameters: Dict[str, Any]) -> str:
         """处理数据集加载操作"""
-        from hello_agents.rl import create_sft_dataset, create_rl_dataset
+        from rl import create_sft_dataset, create_rl_dataset
 
         format_type = parameters.get("format", "sft").lower()
         split = parameters.get("split", "train")
@@ -251,7 +251,7 @@ class RLTrainingTool(Tool):
 
     def _handle_create_reward(self, parameters: Dict[str, Any]) -> str:
         """处理奖励函数创建操作"""
-        from hello_agents.rl import (
+        from rl import (
             create_accuracy_reward,
             create_length_penalty_reward,
             create_step_reward
@@ -308,7 +308,7 @@ class RLTrainingTool(Tool):
     def _handle_evaluate(self, parameters: Dict[str, Any]) -> str:
         """处理模型评估操作"""
         try:
-            from hello_agents.rl import (
+            from rl import (
                 create_rl_dataset,
                 create_accuracy_reward,
                 evaluate_rewards
@@ -430,7 +430,7 @@ class RLTrainingTool(Tool):
         wandb_project: Optional[str] = None
     ) -> Dict[str, Any]:
         """执行SFT训练"""
-        from hello_agents.rl import (
+        from rl import (
             SFTTrainerWrapper,
             TrainingConfig,
             create_sft_dataset,
@@ -499,7 +499,7 @@ class RLTrainingTool(Tool):
         wandb_project: Optional[str] = None
     ) -> Dict[str, Any]:
         """执行GRPO训练"""
-        from hello_agents.rl import (
+        from rl import (
             GRPOTrainerWrapper,
             TrainingConfig,
             create_rl_dataset,
