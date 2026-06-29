@@ -6,7 +6,7 @@ HelloAgents - 灵活、可扩展的多智能体框架
 
 # 配置第三方库的日志级别，减少噪音
 import logging
-logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("httpx").setLevel(logging.INFO)
 logging.getLogger("qdrant_client").setLevel(logging.WARNING)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
 logging.getLogger("neo4j").setLevel(logging.WARNING)
