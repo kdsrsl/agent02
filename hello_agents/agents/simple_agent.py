@@ -305,8 +305,8 @@ class SimpleAgent(Agent):
 
                 # 添加工具结果
                 tool_results_text = "\n\n".join(tool_results)
-                #messages.append({"role": "user", "content": f"工具执行结果：\n{tool_results_text}\n\n请基于这些结果给出完整的回答。"})
-                messages.append({"role": "user", "content": f"工具执行结果：\n{tool_results_text}."})
+                messages.append({"role": "user", "content": f"工具执行结果：\n{tool_results_text}\n\n请基于这些结果给出完整的回答。"})
+                #messages.append({"role": "user", "content": f"工具执行结果：\n{tool_results_text}."})
                 current_iteration += 1
                 continue
 
