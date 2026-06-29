@@ -71,7 +71,7 @@ class SimpleAgent(Agent):
         tools_section += "- 参数名必须与工具定义的参数名完全匹配\n"
         tools_section += "- 数字参数直接写数字，不需要引号：`a=12` 而不是 `a=\"12\"`\n"
         tools_section += "- 文件路径等字符串参数直接写：`path=README.md`\n"
-        tools_section += "- 工具调用结果会自动插入到对话中，然后你可以基于结果继续回答\n"
+        #tools_section += "- 工具调用结果会自动插入到对话中，然后你可以基于结果继续回答\n"
 
         return base_prompt + tools_section
     
